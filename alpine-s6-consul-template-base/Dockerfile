@@ -22,7 +22,7 @@ RUN set -x && \
 
     # cleaning
 
-    apk del .consul-build-deps .consul-template-build-deps
+    apk del .consul-template-build-deps
 
 ADD rootfs /
 ENTRYPOINT ["/init"]
