@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+exec consul-template -consul ${CONSUL_DOMAIN}:${CONSUL_PORT} -config /etc/consul-template/conf.d;
